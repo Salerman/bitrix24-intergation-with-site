@@ -105,7 +105,7 @@ class Bitrix24Rest
         $contacts = [];
 
         self::log($phone, 'searchContactByPhone→rawPhone');
-        $phone = clearPhone(formatPhoneNumber($phone));
+        $phone = clearPhone($phone);
         self::log($phone, 'searchContactByPhone→clearPhone');
 
         $phone_ = $phone;
